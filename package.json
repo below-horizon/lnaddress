@@ -1,0 +1,34 @@
+{
+  "name": "lnaddress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/below-horizon/lnaddress.git"
+  },
+  "author": "st",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/below-horizon/lnaddress/issues"
+  },
+  "homepage": "https://github.com/below-horizon/lnaddress#readme",
+  "dependencies": {
+    "bech32": "^2.0.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1"
+  }
+}

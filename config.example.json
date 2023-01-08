@@ -1,0 +1,17 @@
+{
+  "port": 3002,
+
+  "domain": "EXAMPLE.COM",
+
+  "users": [
+    {
+      "user1": "LNURL..."
+    },
+    {
+      "user2": "LNURL..."
+    },
+    {
+      "user3": "LNURL..."
+    }
+  ]
+}
