@@ -20,7 +20,7 @@ Example file has 3 users, you can have as many or few as you like.
 
 Copy config.example to config.json.
 
-You should be able to access to https://YOURDOMAIN.COM/.well-known/lnurlp/USERNAME and get a [LUD-06](https://github.com/lnurl/luds/blob/luds/06.md) JSON response.
+You should be able to access to `https://YOURDOMAIN.COM/.well-known/lnurlp/USERNAME` and get a [LUD-06](https://github.com/lnurl/luds/blob/luds/06.md) JSON response.
 
 ## Reverse proxy
 
@@ -55,3 +55,6 @@ StandardError=journal
 [Install]
 WantedBy=multi-user.target
 ```
+
+## Support
+You can support by donating to my Lightning address `st1@happysats.org`
