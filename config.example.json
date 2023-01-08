@@ -1,8 +1,6 @@
 {
   "port": 3002,
 
-  "domain": "EXAMPLE.COM",
-
   "users": [
     {
       "user1": "LNURL..."

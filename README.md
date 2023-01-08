@@ -14,7 +14,7 @@ npm run start
 ```
 ## Usage
 
-Edit config.example file and input your own domain, bech32LNURL (LNURL...) and port you wish to use.
+Edit config.example file and input your own username, bech32LNURL (LNURL...) and port you wish to use.
 
 Example file has 3 users, you can have as many or few as you like.
 
