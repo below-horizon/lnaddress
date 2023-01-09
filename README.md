@@ -3,6 +3,7 @@ Serves single or multiple LNAddresses from own domain.
 
 ## Prerequisite
 
+- LNbits (a way to make LNURL)
 - Domain
 - Nodejs
 
@@ -14,13 +15,21 @@ npm run start
 ```
 ## Usage
 
-Edit config.example file and input your own username, bech32LNURL (LNURL...) and port you wish to use.
+Edit config.example.json file and input your own username, bech32LNURL (LNURL...) and port you wish to use.
 
 Example file has 3 users, you can have as many or few as you like.
 
-Copy config.example to config.json.
+Copy config.example.json to config.json.
 
 You should be able to access to `https://YOURDOMAIN.COM/.well-known/lnurlp/USERNAME` and get a [LUD-06](https://github.com/lnurl/luds/blob/luds/06.md) JSON response.
+
+## Docker
+```
+Edit config.json before running docker compose
+docker compose up -d
+OR
+docker-compose up -d
+```
 
 ## Reverse proxy
 
