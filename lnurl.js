@@ -1,10 +1,9 @@
 const { bech32 } = require('bech32');
 
 // Decodes callback url from LNURL and fetches paymentinfo from lnurlp
-const decodeLNUrl = async (input) => {
-  console.log('lnurl input : ', input);
+const decodeLNUrl = async (user) => {
   let paymentInfo = null;
-  const bech32lnurl = Object.values(input)[0];
+  const bech32lnurl = user.lnurl;
   const decodedLNURL = bech32.decode(bech32lnurl, 1500);
   const url = Buffer.from(bech32.fromWords(decodedLNURL.words)).toString();
   const response = await fetch(url);

@@ -3,13 +3,16 @@
 
   "users": [
     {
-      "user1": "LNURL..."
+      "name": "user1",
+      "lnurl": "LNURL..."
     },
     {
-      "user2": "LNURL..."
+      "name": "user2",
+      "lnurl": "LNURL..."
     },
     {
-      "user3": "LNURL..."
+      "name": "user3",
+      "lnurl": "LNURL..."
     }
   ]
 }

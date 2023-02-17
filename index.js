@@ -11,7 +11,7 @@ app.use(express.json());
 const findUser = (userName) => {
   let response = null;
   config.users.forEach((user) => {
-    if (Object.keys(user)[0] === userName) {
+    if (user.name === userName) {
       response = user;
     }
   });
@@ -25,7 +25,6 @@ app.get('/.well-known/lnurlp/:userName', async (req, res) => {
   if (response) {
     const decodedResponse = await decode(response);
     if (decodedResponse) {
-      console.log('decodedResponse: ', decodedResponse);
       return res.status(200).json(decodedResponse);
     }
   }
