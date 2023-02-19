@@ -6,9 +6,13 @@ const decodeLNUrl = async (user) => {
   const bech32lnurl = user.lnurl;
   const decodedLNURL = bech32.decode(bech32lnurl, 1500);
   const url = Buffer.from(bech32.fromWords(decodedLNURL.words)).toString();
-  const response = await fetch(url);
-  const data = await response.json();
-  paymentInfo = data;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    paymentInfo = data;
+  } catch (err) {
+    console.log(err);
+  }
   return paymentInfo;
 };
 

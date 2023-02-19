@@ -66,4 +66,4 @@ WantedBy=multi-user.target
 ```
 
 ## Support
-You can support by donating to my Lightning address `st1@happysats.org`
+You can support by donating to my Lightning address `below_horizon@ln.tips`
