@@ -1,4 +1,5 @@
 const { bech32 } = require('bech32');
+const { curly } = require('node-libcurl');
 
 // Decodes callback url from LNURL and fetches paymentinfo from lnurlp
 const decodeLNUrl = async (user) => {
@@ -7,9 +8,12 @@ const decodeLNUrl = async (user) => {
   const decodedLNURL = bech32.decode(bech32lnurl, 1500);
   const url = Buffer.from(bech32.fromWords(decodedLNURL.words)).toString();
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-    paymentInfo = data;
+    const { data } = await curly.get(url, { FOLLOWLOCATION: true });
+    try {
+      paymentInfo = JSON.parse(data);
+    } catch {
+      paymentInfo = data;
+    }
   } catch (err) {
     console.log(err);
   }
